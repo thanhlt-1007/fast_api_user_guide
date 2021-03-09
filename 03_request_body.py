@@ -48,11 +48,11 @@ class Item(BaseModel):
 # Request body + path + query parameters
 #
 
-@app.put("/items/{item_id}")
-def update_item(item_id: int, item: Item, q: Optional[str] = None):
-  result = {"item_id": item_id, **item.dict()}
+# @app.put("/items/{item_id}")
+# def update_item(item_id: int, item: Item, q: Optional[str] = None):
+#   result = {"item_id": item_id, **item.dict()}
 
-  if q:
-    result.update({"q": q})
+#   if q:
+#     result.update({"q": q})
 
-  return result
+#   return result
